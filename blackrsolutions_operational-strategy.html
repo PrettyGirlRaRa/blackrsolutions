@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Concept Development — R Verse Solutions</title>
+  <title>Operational Strategy — BLACK R SOLUTIONS</title>
+
+  <link rel="icon" type="image/png" href="images/BLACK R LOGO_white transparent.PNG">
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
@@ -185,14 +188,63 @@
       color: #ffffff;
     }
 
-    /* SECTION */
-    .section {
+    /* SECTION 1 */
+    .section-centered {
       width: 90%;
-      max-width: 1100px;
-      margin: 120px auto;
+      max-width: 900px;
+      margin: 90px auto 30px auto;
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .section-centered p {
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      text-align: left;
+      width: 100%;
+      max-width: 750px;
+    }
+
+    /* OMBRÉ LINE */
+    .ombre-line {
+      width: 100%;
+      height: 3px;
+      border-radius: 50px;
+      background: linear-gradient(
+        to right,
+        transparent,
+        #330099aa,
+        #330099,
+        #330099aa,
+        transparent
+      );
+      margin: 45px 0 55px 0;
+    }
+
+    /* SECTION 2 */
+    .section {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto 120px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .section-text {
+      width: 100%;
+      max-width: 750px;
+      font-size: 20px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: left;
     }
 
     .section img {
@@ -201,23 +253,7 @@
       object-fit: cover;
       border-radius: 4px;
       filter: brightness(75%);
-    }
-
-    .section-text {
-      font-size: 20px;
-      line-height: 1.7;
-      color: var(--text-muted);
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    /* OMBRÉ LINE */
-    .ombre-line {
-      width: 100%;
-      height: 3px;
-      border-radius: 50px;
-      background: linear-gradient(to right, transparent, #330099aa, #330099, #330099aa, transparent);
-      margin: 50px 0;
+      margin-top: 30px;
     }
 
     /* FOOTER */
@@ -314,7 +350,7 @@
   <!-- HEADER -->
   <header class="header">
     <a href="index.html">
-      <img src="images/rverse2.png" class="logo" alt="R Verse Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" class="logo" alt="R Verse Logo">
     </a>
     <div id="hamburgerBtn" class="menu-btn" onclick="openMenu()">☰</div>
   </header>
@@ -322,7 +358,7 @@
   <!-- STICKY BAR -->
   <div id="stickyBar" class="sticky-bar">
     <a href="index.html">
-      <img src="images/rverse2.png" alt="R Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" alt="R Logo">
     </a>
     <div class="sticky-menu-btn" onclick="openMenu()">☰</div>
   </div>
@@ -335,60 +371,72 @@
     <div id="closeBtn" class="close-inside" onclick="closeMenu()">✕</div>
 
     <a href="index.html">
-      <img src="images/rverse2.png" class="logo" alt="R Verse Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" class="logo" alt="R Verse Logo">
     </a>
 
     <div class="menu-center">
-      <a href="rversesolutions_business-identity.html" class="division">BUSINESS IDENTITY</a>
-      <a href="rversesolutions_concept-development.html" class="division">CONCEPT DEVELOPMENT</a>
-      <a href="rversesolutions_operations-support.html" class="division">OPERATIONS SUPPORT</a>
-      <a href="rversesolutions_digital-operations.html" class="division">DIGITAL OPERATIONS</a>
-      <a href="rversesolutions_operational-strategy.html" class="division">OPERATIONAL STRATEGY</a>
+      <a href="blackrsolutions_business-identity.html" class="division">BUSINESS IDENTITY</a>
+      <a href="blackrsolutions_concept-development.html" class="division">CONCEPT DEVELOPMENT</a>
+      <a href="blackrsolutions_operations-support.html" class="division">OPERATIONS SUPPORT</a>
+      <a href="blackrsolutions_digital-operations.html" class="division">DIGITAL OPERATIONS</a>
+      <a href="blackrsolutions_operational-strategy.html" class="division">OPERATIONAL STRATEGY</a>
 
       <div class="menu-bottom">
-        <a href="rversesolutions_about.html">ABOUT</a>
-        <a href="rversesolutions_contact.html">CONTACT</a>
+        <a href="blackrsolutions_about.html">ABOUT</a>
+        <a href="blackrsolutions_contact.html">CONTACT</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <div class="hero">
-    <img src="images/concept-development1.jpeg" alt="Concept Development Hero">
-    <div class="hero-text">CONCEPT DEVELOPMENT</div>
+    <img src="images/operational-strategy1.jpeg" alt="Operational Strategy Hero">
+    <div class="hero-text">OPERATIONAL STRATEGY</div>
   </div>
 
- <!-- SECTION 1 -->
-<div class="section">
-  <div class="section-text" style="margin-bottom: 60px;">
-    <p>Concept Development is where ideas become structured, intentional, and ready to move. We help you translate loose thoughts, early sketches, or emerging goals into a clear direction that feels grounded and aligned with your long‑term vision. Our process focuses on clarity, feasibility, and identity. We refine your concept into something that can be communicated, tested, and built — without losing the essence of what makes it yours.</p>
+  <!-- SECTION 1 -->
+  <div class="section-centered">
+    <p>
+      Operational Strategy is where clarity meets execution. We help you define the systems, processes, and decision‑making structures that support long‑term stability and growth.
+    </p>
+
+    <p>
+      From workflow refinement to resource alignment, we ensure your operations are built on intention, efficiency, and strategic foresight.
+    </p>
   </div>
 
-  <img src="images/concept-development2.jpeg" alt="Concept Image" style="height: 500px; object-fit: cover;">
-</div>
+  <!-- SECTION 2 -->
+  <div class="section">
 
-<!-- SECTION 2 -->
-<div class="section">
-  <div class="section-text">
-    <p>We break down your idea into its core components: purpose, audience, value, and execution. This gives you a framework that’s strong enough to guide decisions but flexible enough to evolve.</p>
+    <div class="section-text">
 
-    <p>Whether you’re shaping a new service, a creative project, or a full business direction, we help you define the structure that supports growth, consistency, and long‑term sustainability.</p>
+      <div class="ombre-line"></div>
+
+      <p>
+        We evaluate your operational landscape to identify strengths, gaps, and opportunities. Then we design a strategic framework that supports your goals and elevates your day‑to‑day execution.
+      </p>
+
+      <p style="margin-bottom: 30px;">
+        Your operations become intentional, scalable, and aligned with the identity of your business.
+      </p>
+
+      <img src="images/operational-strategy2.jpeg" alt="Strategy Image">
+    </div>
   </div>
-</div>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <a href="index.html">
-        <img src="images/rverse2.png" class="footer-logo">
+        <img src="images/BLACK R LOGO_white transparent.PNG" class="footer-logo">
       </a>
       <div class="footer-links">
-        <a href="rversesolutions_about.html">About Us</a>
-        <a href="rversesolutions_contact.html">Contact Us</a>
+        <a href="blackrsolutions_about.html">About Us</a>
+        <a href="blackrsolutions_contact.html">Contact Us</a>
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 R VERSE SOLUTIONS — All Rights Reserved
+      © 2026 BLACK R SOLUTIONS — All Rights Reserved
     </div>
   </footer>
 

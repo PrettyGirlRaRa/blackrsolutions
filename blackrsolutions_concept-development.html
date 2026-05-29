@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About — R Verse Solutions</title>
+  <title>Concept Development — BLACK R SOLUTIONS</title>
+
+  <link rel="icon" type="image/png" href="images/BLACK R LOGO_white transparent.PNG">
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
@@ -23,7 +26,7 @@
       overflow-x: hidden;
     }
 
-    /* MAIN HEADER */
+    /* HEADER */
     .header {
       width: 100%;
       position: absolute;
@@ -52,7 +55,6 @@
       right: 91px;
     }
 
-    /* SLIDER CLOSE BUTTON */
     .close-inside {
       position: absolute;
       top: 25px;
@@ -133,11 +135,38 @@
       color: #ffffff;
     }
 
+    /* STICKY BAR */
+    .sticky-bar {
+      position: fixed;
+      top: -75px;
+      left: 0;
+      width: 100%;
+      height: 75px;
+      background: linear-gradient(to bottom, #111217 70%, #330099 100%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 91px;
+      z-index: 999;
+      transition: top 0.25s ease-out;
+    }
+
+    .sticky-bar img {
+      width: 100px;
+      filter: brightness(0) invert(1);
+    }
+
+    .sticky-menu-btn {
+      font-size: 36px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
     /* HERO */
     .hero {
       position: relative;
       width: 100%;
-      height: 55vh;
+      height: 60vh;
       overflow: hidden;
     }
 
@@ -145,73 +174,53 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(60%);
+      filter: brightness(55%);
     }
 
     .hero-text {
       position: absolute;
-      bottom: 40px;
+      bottom: 60px;
       left: 91px;
-      font-size: 48px;
+      font-size: 64px;
       font-weight: 700;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #ffffff;
     }
 
-    /* CONTENT */
-    .content {
+    /* SECTION */
+    .section {
       width: 90%;
       max-width: 1100px;
-      margin: 80px auto;
+      margin: 120px auto;
       display: flex;
       flex-direction: column;
-      gap: 60px;
+      gap: 30px;
     }
 
-    .section-title {
-      font-size: 26px;
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      text-transform: uppercase;
-      white-space: nowrap;
+    .section img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 4px;
+      filter: brightness(75%);
     }
 
-    .inline-logo {
-      height: 22px;
-      filter: brightness(0) invert(1);
-      margin-bottom: -2px;
-    }
-
-    .text-block p {
-      font-size: 18px;
+    .section-text {
+      font-size: 20px;
       line-height: 1.7;
-      color: #ffffff;
+      color: var(--text-muted);
+      max-width: 900px;
+      margin: 0 auto;
     }
 
-    .text-block {
-      max-width: 850px;
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-    }
-
-    /* OMBRÉ PARAGRAPH DIVIDER */
+    /* OMBRÉ LINE */
     .ombre-line {
       width: 100%;
       height: 3px;
       border-radius: 50px;
-      background: linear-gradient(
-        to right,
-        transparent,
-        #330099aa,
-        #330099,
-        #330099aa,
-        transparent
-      );
-      margin: 35px 0;
+      background: linear-gradient(to right, transparent, #330099aa, #330099, #330099aa, transparent);
+      margin: 50px 0;
     }
 
     /* FOOTER */
@@ -264,33 +273,6 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
-
-    /* STICKY BAR */
-    .sticky-bar {
-      position: fixed;
-      top: -75px;
-      left: 0;
-      width: 100%;
-      height: 75px;
-      background: linear-gradient(to bottom, #111217 70%, #330099 100%);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 91px;
-      z-index: 999;
-      transition: top 0.25s ease-out;
-    }
-
-    .sticky-bar img {
-      width: 100px;
-      filter: brightness(0) invert(1);
-    }
-
-    .sticky-menu-btn {
-      font-size: 36px;
-      color: #ffffff;
-      cursor: pointer;
-    }
   </style>
 
   <script>
@@ -332,10 +314,10 @@
 
 <body>
 
-  <!-- MAIN HEADER -->
+  <!-- HEADER -->
   <header class="header">
     <a href="index.html">
-      <img src="images/rverse2.png" class="logo" alt="R Verse Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" class="logo" alt="R Verse Logo">
     </a>
     <div id="hamburgerBtn" class="menu-btn" onclick="openMenu()">☰</div>
   </header>
@@ -343,7 +325,7 @@
   <!-- STICKY BAR -->
   <div id="stickyBar" class="sticky-bar">
     <a href="index.html">
-      <img src="images/rverse2.png" alt="R Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" alt="R Logo">
     </a>
     <div class="sticky-menu-btn" onclick="openMenu()">☰</div>
   </div>
@@ -356,63 +338,60 @@
     <div id="closeBtn" class="close-inside" onclick="closeMenu()">✕</div>
 
     <a href="index.html">
-      <img src="images/rverse2.png" class="logo" alt="R Verse Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" class="logo" alt="R Verse Logo">
     </a>
 
     <div class="menu-center">
-      <a href="rversesolutions_business-identity.html" class="division">BUSINESS IDENTITY</a>
-      <a href="rversesolutions_concept-development.html" class="division">CONCEPT DEVELOPMENT</a>
-      <a href="rversesolutions_operations-support.html" class="division">OPERATIONS SUPPORT</a>
-      <a href="rversesolutions_digital-operations.html" class="division">DIGITAL OPERATIONS</a>
-      <a href="rversesolutions_operational-strategy.html" class="division">OPERATIONAL STRATEGY</a>
+      <a href="blackrsolutions_business-identity.html" class="division">BUSINESS IDENTITY</a>
+      <a href="blackrsolutions_concept-development.html" class="division">CONCEPT DEVELOPMENT</a>
+      <a href="blackrsolutions_operations-support.html" class="division">OPERATIONS SUPPORT</a>
+      <a href="blackrsolutions_digital-operations.html" class="division">DIGITAL OPERATIONS</a>
+      <a href="blackrsolutions_operational-strategy.html" class="division">OPERATIONAL STRATEGY</a>
 
       <div class="menu-bottom">
-        <a href="rversesolutions_about.html">ABOUT</a>
-        <a href="rversesolutions_contact.html">CONTACT</a>
+        <a href="blackrsolutions_about.html">ABOUT</a>
+        <a href="blackrsolutions_contact.html">CONTACT</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <div class="hero">
-    <img src="images/about1.jpeg" alt="About R Verse Solutions Header">
-    <div class="hero-text">R VERSE SOLUTIONS</div>
+    <img src="images/concept-development1.jpeg" alt="Concept Development Hero">
+    <div class="hero-text">CONCEPT DEVELOPMENT</div>
   </div>
 
-  <!-- CONTENT -->
-  <div class="content">
-    <div class="section-title">
-      Who We <img src="images/rverse2.png" class="inline-logo">
-    </div>
-
-    <div class="text-block">
-      <p>R Verse Solutions provides structured administrative support designed to strengthen the internal foundation of growing businesses. Our work centers on clarity, organization, and operational consistency — the elements that allow teams to function with confidence and direction.</p>
-
-      <p>We support organizations by refining workflows, building internal systems, and creating the structure needed for long-term stability. Our approach is grounded, intentional, and built around the belief that strong operations create strong outcomes.</p>
-
-      <div class="ombre-line"></div>
-
-      <p>Our process begins with understanding your operational needs. We identify gaps, streamline systems, and create solutions that support your internal structure. Every project is approached with precision and a commitment to long-term functionality.</p>
-
-      <p>Whether supporting digital organization, internal operations, or strategic planning, we bring a consistent standard of clarity and structure to every environment we work in.</p>
-
-      <p>Our commitment is simple: to provide reliable, intentional administrative support that strengthens the core of your business. We build systems that last, workflows that make sense, and operational foundations that allow teams to grow with confidence.</p>
-    </div>
+ <!-- SECTION 1 -->
+<div class="section">
+  <div class="section-text" style="margin-bottom: 60px;">
+    <p>Concept Development is where ideas become structured, intentional, and ready to move. We help you translate loose thoughts, early sketches, or emerging goals into a clear direction that feels grounded and aligned with your long‑term vision. Our process focuses on clarity, feasibility, and identity. We refine your concept into something that can be communicated, tested, and built — without losing the essence of what makes it yours.</p>
   </div>
+
+  <img src="images/concept-development2.jpeg" alt="Concept Image" style="height: 500px; object-fit: cover;">
+</div>
+
+<!-- SECTION 2 -->
+<div class="section">
+  <div class="section-text">
+    <p>We break down your idea into its core components: purpose, audience, value, and execution. This gives you a framework that’s strong enough to guide decisions but flexible enough to evolve.</p>
+
+    <p>Whether you’re shaping a new service, a creative project, or a full business direction, we help you define the structure that supports growth, consistency, and long‑term sustainability.</p>
+  </div>
+</div>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <a href="index.html">
-        <img src="images/rverse2.png" class="footer-logo">
+        <img src="images/BLACK R LOGO_white transparent.PNG" class="footer-logo">
       </a>
       <div class="footer-links">
-        <a href="rversesolutions_about.html">About Us</a>
-        <a href="rversesolutions_contact.html">Contact Us</a>
+        <a href="blackrsolutions_about.html">About Us</a>
+        <a href="blackrsolutions_contact.html">Contact Us</a>
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 R VERSE SOLUTIONS — All Rights Reserved
+      © 2026 BLACK R SOLUTIONS — All Rights Reserved
     </div>
   </footer>
 

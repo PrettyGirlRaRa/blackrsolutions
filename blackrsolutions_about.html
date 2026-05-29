@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Business Identity — R Verse Solutions</title>
+  <title>About — BLACK R SOLUTIONS</title>
+
+  <link rel="icon" type="image/png" href="images/BLACK R LOGO_white transparent.PNG">
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <style>
@@ -23,7 +26,7 @@
       overflow-x: hidden;
     }
 
-    /* HEADER */
+    /* MAIN HEADER */
     .header {
       width: 100%;
       position: absolute;
@@ -52,6 +55,7 @@
       right: 91px;
     }
 
+    /* SLIDER CLOSE BUTTON */
     .close-inside {
       position: absolute;
       top: 25px;
@@ -132,38 +136,11 @@
       color: #ffffff;
     }
 
-    /* STICKY BAR */
-    .sticky-bar {
-      position: fixed;
-      top: -75px;
-      left: 0;
-      width: 100%;
-      height: 75px;
-      background: linear-gradient(to bottom, #111217 70%, #330099 100%);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 91px;
-      z-index: 999;
-      transition: top 0.25s ease-out;
-    }
-
-    .sticky-bar img {
-      width: 100px;
-      filter: brightness(0) invert(1);
-    }
-
-    .sticky-menu-btn {
-      font-size: 36px;
-      color: #ffffff;
-      cursor: pointer;
-    }
-
     /* HERO */
     .hero {
       position: relative;
       width: 100%;
-      height: 60vh;
+      height: 55vh;
       overflow: hidden;
     }
 
@@ -171,61 +148,60 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      filter: brightness(55%);
+      filter: brightness(60%);
     }
 
     .hero-text {
       position: absolute;
-      bottom: 60px;
+      bottom: 40px;
       left: 91px;
-      font-size: 64px;
+      font-size: 48px;
       font-weight: 700;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: #ffffff;
     }
 
-    /* SECTIONS */
-    .section {
+    /* CONTENT */
+    .content {
       width: 90%;
       max-width: 1100px;
-      margin: 120px auto;
+      margin: 80px auto;
       display: flex;
-      align-items: center;
+      flex-direction: column;
       gap: 60px;
     }
 
-    .section img {
-      width: 50%;
-      border-radius: 4px;
-      object-fit: cover;
+    .section-title {
+      font-size: 26px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-transform: uppercase;
+      white-space: nowrap;
     }
 
-    .section-text {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .inline-logo {
+      height: 22px;
+      filter: brightness(0) invert(1);
+      margin-bottom: -2px;
+    }
+
+    .text-block p {
       font-size: 18px;
       line-height: 1.7;
-      color: var(--text-muted);
+      color: #ffffff;
     }
 
-    /* FULL-WIDTH IMAGE */
-    .full-image {
-      width: 100%;
-      height: 420px;
-      margin: 120px 0;
+    .text-block {
+      max-width: 850px;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
     }
 
-    .full-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(75%);
-    }
-
-    /* OMBRÉ LINE */
+    /* OMBRÉ PARAGRAPH DIVIDER */
     .ombre-line {
       width: 100%;
       height: 3px;
@@ -291,6 +267,33 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
     }
+
+    /* STICKY BAR */
+    .sticky-bar {
+      position: fixed;
+      top: -75px;
+      left: 0;
+      width: 100%;
+      height: 75px;
+      background: linear-gradient(to bottom, #111217 70%, #330099 100%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 91px;
+      z-index: 999;
+      transition: top 0.25s ease-out;
+    }
+
+    .sticky-bar img {
+      width: 100px;
+      filter: brightness(0) invert(1);
+    }
+
+    .sticky-menu-btn {
+      font-size: 36px;
+      color: #ffffff;
+      cursor: pointer;
+    }
   </style>
 
   <script>
@@ -332,10 +335,10 @@
 
 <body>
 
-  <!-- HEADER -->
+  <!-- MAIN HEADER -->
   <header class="header">
     <a href="index.html">
-      <img src="images/rverse2.png" class="logo" alt="R Verse Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" class="logo" alt="R Verse Logo">
     </a>
     <div id="hamburgerBtn" class="menu-btn" onclick="openMenu()">☰</div>
   </header>
@@ -343,7 +346,7 @@
   <!-- STICKY BAR -->
   <div id="stickyBar" class="sticky-bar">
     <a href="index.html">
-      <img src="images/rverse2.png" alt="R Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" alt="R Logo">
     </a>
     <div class="sticky-menu-btn" onclick="openMenu()">☰</div>
   </div>
@@ -356,70 +359,47 @@
     <div id="closeBtn" class="close-inside" onclick="closeMenu()">✕</div>
 
     <a href="index.html">
-      <img src="images/rverse2.png" class="logo" alt="R Verse Logo">
+      <img src="images/BLACK R LOGO_white transparent.PNG" class="logo" alt="R Verse Logo">
     </a>
 
     <div class="menu-center">
-      <a href="rversesolutions_business-identity.html" class="division">BUSINESS IDENTITY</a>
-      <a href="rversesolutions_concept-development.html" class="division">CONCEPT DEVELOPMENT</a>
-      <a href="rversesolutions_operations-support.html" class="division">OPERATIONS SUPPORT</a>
-      <a href="rversesolutions_digital-operations.html" class="division">DIGITAL OPERATIONS</a>
-      <a href="rversesolutions_operational-strategy.html" class="division">OPERATIONAL STRATEGY</a>
+      <a href="blackrsolutions_business-identity.html" class="division">BUSINESS IDENTITY</a>
+      <a href="blackrsolutions_concept-development.html" class="division">CONCEPT DEVELOPMENT</a>
+      <a href="blackrsolutions_operations-support.html" class="division">OPERATIONS SUPPORT</a>
+      <a href="blackrsolutions_digital-operations.html" class="division">DIGITAL OPERATIONS</a>
+      <a href="blackrsolutions_operational-strategy.html" class="division">OPERATIONAL STRATEGY</a>
 
       <div class="menu-bottom">
-        <a href="rversesolutions_about.html">ABOUT</a>
-        <a href="rversesolutions_contact.html">CONTACT</a>
+        <a href="blackrsolutions_about.html">ABOUT</a>
+        <a href="blackrsolutions_contact.html">CONTACT</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <div class="hero">
-    <img src="images/brand-identity1.jpeg" alt="Brand Identity Hero">
-    <div class="hero-text">BUSINESS IDENTITY</div>
+    <img src="images/about1.jpeg" alt="About BLACK R SOLUTIONS Header">
+    <div class="hero-text">R VERSE SOLUTIONS</div>
   </div>
 
-  <!-- SECTION 1 -->
-  <div class="section">
-    <img src="images/brand-identity2.jpeg" alt="Creator Workspace">
-
-    <div class="section-text">
-      <p>Your business identity is the way your work is recognized, remembered, and understood. We help you move beyond a logo or color palette into a cohesive presence that feels intentional at every touchpoint.</p>
-
-      <p>We build identity systems that feel modern, grounded, and distinctly yours.</p>
+  <!-- CONTENT -->
+  <div class="content">
+    <div class="section-title">
+      Who We <img src="images/BLACK R LOGO_white transparent.PNG" class="inline-logo">
     </div>
-  </div>
 
-  <!-- FULL-WIDTH IMAGE -->
-  <div class="full-image">
-    <img src="images/brand-identity3.jpeg" alt="Brand Guideline Grid">
-  </div>
+    <div class="text-block">
+      <p>BLACK R SOLUTIONS provides structured administrative support designed to strengthen the internal foundation of growing businesses. Our work centers on clarity, organization, and operational consistency — the elements that allow teams to function with confidence and direction.</p>
 
-  <!-- SECTION 2 -->
-  <div class="section" style="flex-direction: row-reverse; margin-top: 200px;">
-    <img src="images/brand-identity4.png" alt="Digital Teamwork Illustration">
+      <p>We support organizations by refining workflows, building internal systems, and creating the structure needed for long-term stability. Our approach is grounded, intentional, and built around the belief that strong operations create strong outcomes.</p>
 
-    <div class="section-text">
+      <div class="ombre-line"></div>
 
-      <p style="margin-top: 0px;">
-        A strong identity system gives you structure without limiting your expression.
-        We design frameworks that translate across platforms — from social content to digital experiences.
-      </p>
+      <p>Our process begins with understanding your operational needs. We identify gaps, streamline systems, and create solutions that support your internal structure. Every project is approached with precision and a commitment to long-term functionality.</p>
 
-      <p>
-        Every element is chosen to support how you want to be seen and what you want to be known for.
-      </p>
+      <p>Whether supporting digital organization, internal operations, or strategic planning, we bring a consistent standard of clarity and structure to every environment we work in.</p>
 
-      <div class="ombre-line" style="margin-top: 130px;"></div>
-    </div>
-  </div>
-
-  <!-- SECTION 3 -->
-  <div class="section" style="flex-direction: column; align-items: flex-start; max-width: 1100px; margin-top: 5px;">
-    <div class="section-text" style="width: 100%; text-align: left;">
-      <p>Your identity is a strategic asset. We treat it as the foundation for how you communicate, make decisions, and show up in the spaces that matter.</p>
-
-      <p>We create systems built to last — so when people encounter your work, they know exactly who they’re experiencing.</p>
+      <p>Our commitment is simple: to provide reliable, intentional administrative support that strengthens the core of your business. We build systems that last, workflows that make sense, and operational foundations that allow teams to grow with confidence.</p>
     </div>
   </div>
 
@@ -427,15 +407,15 @@
   <footer class="footer">
     <div class="footer-inner">
       <a href="index.html">
-        <img src="images/rverse2.png" class="footer-logo">
+        <img src="images/BLACK R LOGO_white transparent.PNG" class="footer-logo">
       </a>
       <div class="footer-links">
-        <a href="rversesolutions_about.html">About Us</a>
-        <a href="rversesolutions_contact.html">Contact Us</a>
+        <a href="blackrsolutions_about.html">About Us</a>
+        <a href="blackrsolutions_contact.html">Contact Us</a>
       </div>
     </div>
     <div class="footer-bottom">
-      © 2026 R VERSE SOLUTIONS — All Rights Reserved
+      © 2026 BLACK R SOLUTIONS — All Rights Reserved
     </div>
   </footer>
 
